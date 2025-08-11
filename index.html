@@ -107,12 +107,28 @@
   }
 </style>
 
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/logo-16.png">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
+
+
+<style>
+  /* Logo sizing tweak for small screens */
+  @media (max-width:640px){
+    .brand img, .brand .brand-logo img { width:32px; height:32px; }
+  }
+</style>
+
 </head>
 <body>
   <header>
     <div class="container nav">
       <div class="brand">
-        <img src="assets/logo.png" alt="Логотип Про Недвижимость" />
+        <picture class="brand-logo"><source srcset="assets/logo-72.webp 2x, assets/logo-36.webp 1x" type="image/webp"><source srcset="assets/logo-72.png 2x, assets/logo-36.png 1x" type="image/png"><img src="assets/logo-36.png" alt="Про Недвижимость" width="36" height="36" loading="eager" decoding="async" /></picture>
         <div>
           <div style="font-size:16px">ПРО НЕДВИЖИМОСТЬ</div>
           <div style="font-size:12px;color:var(--muted)">Йошкар‑Ола • новостройки и вторичка</div>
